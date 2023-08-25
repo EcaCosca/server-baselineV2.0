@@ -1,3 +1,5 @@
+import dotenv from 'dotenv';
+dotenv.config()
 import pg from 'pg';
 
 let conString = process.env.SQL_URL;
