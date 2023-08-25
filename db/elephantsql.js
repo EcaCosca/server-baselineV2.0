@@ -1,4 +1,4 @@
-let pg = require('pg');
+import pg from 'pg';
 
 let conString = process.env.SQL_URL;
 
@@ -12,4 +12,4 @@ client.connect((err) => {
   console.log("Connected to SQL DB")
 });
 
-module.exports = client;
+export default client;
